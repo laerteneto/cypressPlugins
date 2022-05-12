@@ -7,6 +7,7 @@ class LoginPage {
   }
 
   assertLoginSucesso() {
+    cy.log('test log')
     cy.get('#flash').click().should('be.visible')
     cy.get('#flash').should('contain.text', 'You logged into a secure area!')
     cy.url().should('include', '/secure')
