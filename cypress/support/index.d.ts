@@ -15,4 +15,3 @@ declare namespace Cypress {
     toMatchImageSnapshot(): Chainable<Element>
   }
 }
-

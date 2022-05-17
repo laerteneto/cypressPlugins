@@ -21,7 +21,7 @@ describe('Testes de login', () => {
       loginPage.assertLoginFalhou()
     })
 
-    it('Test then assync and manipulation', () => {
+    it('Test then async and manipulation', () => {
       cy.get('.subheader')
         .invoke('text')
         .then((text) => {
@@ -31,12 +31,10 @@ describe('Testes de login', () => {
         })
     })
 
-    it.only('Image snapshot  - whole page', () => {
-      cy.login('tomsmith', 'SuperSecretPassword!')
-      .then(() => {
-        cy.document()
-          .toMatchImageSnapshot();
-      });
+    it('Image snapshot  - whole page', () => {
+      cy.login('tomsmith', 'SuperSecretPassword!').then(() => {
+        cy.document().toMatchImageSnapshot()
+      })
     })
   })
 
