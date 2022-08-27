@@ -1,13 +1,11 @@
 {
-  "projectId": "123456",
+  "projectId": "mtqhog",
 
   "chromeWebSecurity": false,
   "trashAssetsBeforeRuns": true,
   "numTestsKeptInMemory": 15,
   "testFiles": "**/*.spec.js",
   "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
-
-  "experimentalSessionAndOrigin": true,
 
   "video": true,
   "videoCompression": false,
